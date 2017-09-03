@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+BASE_FILES=$(find $WORKON_HOME -maxdepth 1 -type f)
+
+for file in $BASE_FILES
+do
+    sed -i "1s|^#!$|#!/usr/bin/env bash|" $file
+done
+
+source `which virtualenvwrapper.sh`
+AVAILABLE_VENVS=$(workon)
+
+for VENV_NAME in $AVAILABLE_VENVS
+do
+    VENV_FILE_PATH="$WORKON_HOME/$VENV_NAME/bin"
+    VENV_FILES=$(find $VENV_FILE_PATH -maxdepth 1 -type f)
+    for file in $VENV_FILES
+    do
+        sed -i "1s|^#!$|#!/usr/bin/env bash|" $file
+    done
+done

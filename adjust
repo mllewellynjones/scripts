@@ -3,3 +3,5 @@
 ## ZOOM
 ##############################################################################
 dconf write /com/ubuntu/user-interface/scale-factor "{'VGA-1': 6}"
+dconf write /org/gnome/desktop/screensaver/idle-activation-enabled false
+dconf write /org/gnome/desktop/screensaver/lock-enabled false
