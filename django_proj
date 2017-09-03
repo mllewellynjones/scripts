@@ -1,1 +1,2 @@
+#!/usr/bin/env bash
 cookiecutter https://github.com/pydanny/cookiecutter-django

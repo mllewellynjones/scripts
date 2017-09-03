@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Get Pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -10,7 +11,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 sudo apt-get install ruby-dev
 cd ~/.vim/bundle
 git clone https://github.com/wincent/Command-T.git
-cd ~./vim/bundle/Command-T
+cd ~/.vim/bundle/Command-T
 rake make
 
 # Get YCM
@@ -29,4 +30,3 @@ git clone --depth=1 https://github.com/scrooloose/syntastic.git
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-fugitive.git
 vim -u NONE -c "helptags vim-fugitive/doc" -c q
-
