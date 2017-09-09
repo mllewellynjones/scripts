@@ -1,0 +1,5 @@
+mkdir -p ~/bin
+ln -s ~/scripts/run_and_open ~/bin/ro
+ln -s ~/scripts/run_for_host ~/bin/rh
+ln -s ~/scripts/run_for_guest ~/bin/rg
+

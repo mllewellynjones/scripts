@@ -1,0 +1,3 @@
+python manage.py runserver &
+firefox localhost:8000
+pkill -f "python manage.py runserver"
